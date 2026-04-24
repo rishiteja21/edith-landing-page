@@ -46,7 +46,7 @@ function AdaptiveFlow() {
             <React.Fragment key={step.id}>
               {/* Block */}
               <div 
-                className={`relative flex flex-col items-center justify-center w-[76px] h-[76px] rounded-xl border transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] z-10 ${
+                className={`relative flex flex-col items-center justify-center w-[76px] h-[76px] rounded-xl border transition-all duration-500 ease-smooth z-10 ${
                   isActive 
                     ? "bg-black text-white border-black scale-105 shadow-xl shadow-black/20" 
                     : isPast 
@@ -98,7 +98,7 @@ function AdaptiveFlow() {
       {/* Dynamic Text Below */}
       <div className="mt-5 text-center h-[14px] overflow-hidden relative">
         <div 
-          className="transition-transform duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] flex flex-col"
+          className="transition-transform duration-500 ease-smooth flex flex-col"
           style={{ transform: `translateY(-${activeStep * 14}px)` }}
         >
           {steps.map(step => (

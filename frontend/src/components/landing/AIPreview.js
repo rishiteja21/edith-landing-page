@@ -167,7 +167,7 @@ function AnimatedRadar({ isVisible }) {
       
       {/* Interactive Group */}
       <g 
-        className="group origin-center transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] hover:scale-[1.12] cursor-pointer" 
+        className="group origin-center transition-transform duration-700 ease-smooth hover:scale-[1.12] cursor-pointer" 
         style={{ transformOrigin: `${cx}px ${cy}px` }}
       >
         {/* Filled Polygon */}
