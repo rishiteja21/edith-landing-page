@@ -57,7 +57,7 @@ export default function SocialProof({ count }) {
               {testimonials[2].duration} — Beta Tester
             </span>
           </div>
-          <div className="md:col-span-4 md:row-span-1 bg-[#111] border border-black/20 p-6 flex items-center justify-between cursor-pointer hover:bg-[#1a1a1a] transition-colors" data-testid={`testimonial-cta`}>
+          <div className="md:col-span-4 md:row-span-1 bg-[#111] border border-black/20 p-6 flex items-center justify-between cursor-pointer hover:bg-[#1a1a1a] transition-colors" data-testid={`testimonial-cta`} onClick={() => document.getElementById("final-cta")?.scrollIntoView({ behavior: "smooth" })}>
             <div>
               <p className="text-lg text-[#f0efeb] font-bold">Join them on the waitlist</p>
               <p className="text-xs text-[#f0efeb]/50 mt-1">Be the next success story</p>
