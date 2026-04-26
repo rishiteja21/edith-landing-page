@@ -109,7 +109,7 @@ export default function HeroSection({ onSubmit, loading, submitted, message, wai
                         type="submit"
                         disabled={loading}
                         data-testid="hero-submit-btn"
-                        className="absolute right-1 top-1 bottom-1 bg-black text-white px-3 rounded-lg font-bold text-xs uppercase tracking-wider hover:bg-black/80 transition-colors disabled:opacity-50"
+                        className="absolute right-1 top-1 bottom-1 bg-black text-white px-3 rounded-xl font-normal text-xs uppercase tracking-wider hover:bg-black/80 transition-colors disabled:opacity-50"
                       >
                         {loading ? "..." : "→"}
                       </button>
@@ -126,9 +126,13 @@ export default function HeroSection({ onSubmit, loading, submitted, message, wai
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-8">
           {features.map((f, i) => (
-            <div key={i} className="bg-[#e4e4de] p-4 flex items-center gap-3 border border-black/10">
-              <div className="w-10 h-10 rounded-lg bg-[#d8d8d3] flex items-center justify-center flex-shrink-0 border border-black/10">
-                <f.icon size={18} className="text-black/55" />
+            <div
+              key={i}
+              className="group bg-[#e4e4de] p-4 flex items-center gap-3 border border-black/10 rounded-xl cursor-pointer select-none transition-all duration-200 ease-out hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(0,0,0,0.12)] hover:border-black/20 hover:bg-[#ecece7] focus-within:-translate-y-1 focus-within:shadow-[0_12px_28px_rgba(0,0,0,0.12)] focus-within:border-black/20"
+              tabIndex={0}
+            >
+              <div className="w-10 h-10 rounded-lg bg-[#d8d8d3] flex items-center justify-center flex-shrink-0 border border-black/10 transition-transform duration-200 ease-out group-hover:scale-[1.05] group-focus-within:scale-[1.05]">
+                <f.icon size={18} className="text-black/55 transition-transform duration-200 ease-out group-hover:scale-[1.06] group-focus-within:scale-[1.06]" />
               </div>
               <div>
                 <span className="block text-xs font-bold text-black">{f.label}</span>

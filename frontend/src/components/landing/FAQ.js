@@ -2,16 +2,16 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "How does EDITH adapt to my schedule changes?",
-    answer: "EDITH monitors your training logs, sleep data, and recovery metrics in real-time. When you miss a session or need to reschedule, it automatically recalculates your weekly volume and adjusts future workouts to maintain progressive overload without overtraining."
+    question: "How does EDITH handle injuries, deloads, or travel?",
+    answer: "You tell EDITH what's going on—pain, low recovery, limited equipment, or a travel week. It adjusts intensity, volume, and exercise selection so you keep momentum without digging a deeper hole."
   },
   {
     question: "What happens if I skip a day?",
     answer: "Instead of resetting your progress or guilt-tripping you, EDITH analyzes why you missed the session. It factors in your recovery status, upcoming session demands, and adjusts the protocol accordingly. Skipping one planned day won't derail your program."
   },
   {
-    question: "Is EDITH only for bodybuilders?",
-    answer: "No. EDITH adapts to any fitness goal—weight loss, muscle gain, athletic performance, or general health. The AI adjusts its communication style and programming based on your specific objectives and experience level."
+    question: "Does it integrate with Apple Health, Google Fit, or wearables?",
+    answer: "Not yet. We're starting with the core EDITH protocol first. Wearable and health-platform integrations are planned—join the waitlist to get early access as they roll out."
   },
   {
     question: "How does the accountability work?",
