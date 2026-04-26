@@ -35,7 +35,7 @@ export default function Footer() {
               <img
                 src={brandLogo}
                 alt="EDITH"
-                className="h-9 w-[132px] object-cover object-center scale-[1.18] origin-center"
+                className="h-8 w-[120px] object-cover object-center scale-[1.1] origin-center"
               />
             </div>
             <p className="text-sm text-[#2f2f2b] max-w-xs font-medium leading-relaxed">
